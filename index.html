@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Noticias</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NOTICIAS</h1>
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('Tecnología')">Tecnología</span>
+                <span class="cat" onclick="buscar('programación')">Programación</span>
+                <span class="cat" onclick="buscar('deportes')">Deportes</span>
+                <span class="cat" onclick="buscar('economía')">Economía</span>
+                <span class="cat" onclick="buscar('educación')">Educación</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Qué desea buscar" id="busqueda">
+                <button onclick="buscarTema()">Buscar</button>
+            </div>
+        </header>
+
+
+        <div class="container-noticias">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

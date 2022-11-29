@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color:#fc0505 ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav span{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+nav span:hover{
+    color: red;
+}
+header input{
+    padding: 5px 10px;
+    border: none;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+header button{
+    border: none;
+    padding: 7px 10px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+}
+.container-noticias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:30px;
+    padding-bottom: 20px;
+}
+.container-noticias .item{
+    background-color: #eee;
+    max-width: 360px;
+    border:2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.container-noticias .item:hover{
+    box-shadow: 0 0 10px 5px #ccc;
+}
+.container-noticias .item:hover h2{
+    text-decoration: underline;
+}
+.container-noticias .item .info_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container-noticias .item img{
+    width: 100%;
+}
+.container-noticias #btnSiguiente{
+    cursor: pointer;
+}
+.container-noticias #btnSiguiente:hover{
+    color: #fc0505;
+}
